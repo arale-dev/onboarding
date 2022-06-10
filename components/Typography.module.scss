@@ -1,0 +1,29 @@
+.title {
+    margin: 0;
+    line-height: 1.4;
+    font-size: 4rem;
+    background-color: aquamarine;
+}
+
+.title a {
+    margin-left: 1rem;
+    color: #0070f3;
+    text-decoration: none;
+    text-decoration: underline;
+}
+
+.subject {
+    font-size: 3rem;
+}
+
+.decoration {
+    font-size: 2rem;
+}
+
+.title,
+.subject,
+.description {
+    text-align: center;
+    display: flex;
+    align-items: center;
+}

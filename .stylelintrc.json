@@ -1,9 +1,9 @@
 {
-    "extends": [
-        "stylelint-config-concentric-order",
-        "stylelint-config-standard"
-    ],
+    "extends": ["stylelint-config-standard"],
     "rules": {
-        "indentation": 4
+        "indentation": 4,
+        "value-list-comma-newline-after": null,
+        "string-quotes": "single",
+        "declaration-colon-newline-after": null
     }
 }

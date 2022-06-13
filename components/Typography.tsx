@@ -1,27 +1,28 @@
+/* eslint-disable react/require-default-props */
 import React from 'react';
 import style from './Typography.module.scss';
 
 interface TitleProps {
     content: string;
-    children: React.ReactNode;
+    children?: React.ReactNode;
 }
 const Title: React.FC<TitleProps> = ({ content, children }) => {
     return (
-        <h2 className={style.title}>
+        <p className={style.title}>
             {content} {children}
-        </h2>
+        </p>
     );
 };
 
 interface TextProps {
     content: string;
-    children: React.ReactNode;
+    children?: React.ReactNode;
 }
 interface BaseTextProps extends TextProps {
     type: 'subject' | 'description' | null;
 }
 const BaseText: React.FC<BaseTextProps> = ({ content, children, type }) => {
-    const styleType = type === 'subject' ? style.subject : style.descripton;
+    const styleType = type === 'subject' ? style.subject : style.description;
     return (
         <p className={type ? styleType : undefined}>
             {content} {children}

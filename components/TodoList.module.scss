@@ -1,0 +1,42 @@
+.container {
+    width: 30rem;
+    background-color: white;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+
+    display: flex;
+    flex-direction: column;
+    align-self: stretch;
+    align-items: stretch;
+    padding: 1rem 2rem 2rem;
+    margin-top: 2.5rem;
+
+    .header {
+        display: flex;
+        flex-direction: row;
+        align-items: space-between;
+        background-color: #8928ff;
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: row;
+        align-items: stretch;
+        font-size: 14px;
+        margin-top: 0.5rem;
+
+        .remain {
+            color: #a87bd8;
+            display: flex;
+            flex: 1;
+        }
+
+        .userName {
+            color: #9664cb;
+            display: flex;
+        }
+
+        p {
+            margin: 0;
+        }
+    }
+}

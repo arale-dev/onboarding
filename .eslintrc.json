@@ -12,6 +12,10 @@
         "react/prefer-stateless-function": 0,
         "react/jsx-filename-extension": 0,
         "react/jsx-one-expression-per-line": 0,
+        "react/require-default-props": [
+            "warn",
+            { "functions": "defaultArguments" }
+        ],
         "react/function-component-definition": [
             2,
             { "namedComponents": "arrow-function" }
@@ -26,7 +30,9 @@
                 "tsx": "never",
                 "json": "never"
             }
-        ]
+        ],
+        "jsx-a11y/control-has-associated-label": 0,
+        "no-unused-vars": 1
     },
     "globals": {
         "React": "writable"

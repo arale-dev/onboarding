@@ -1,0 +1,73 @@
+$complete-primary: #3bd796;
+$complete-hover: #39b07f;
+$undo-primary: #c6c9d0;
+$undo-hover: #96999e;
+$delete-primary: #eb96aa;
+$delete-hover: #ee5176;
+$card: #e5dbd9;
+$theme: #9664cb;
+$dark: #555555;
+$light: #888888;
+
+.checkButton {
+    display: flex;
+    height: 1.2rem;
+    width: 1.2rem;
+    border: 0.2rem solid $undo-primary;
+    border-radius: 0.6rem;
+    margin: 1rem;
+    background-color: transparent;
+    cursor: pointer;
+
+    &:hover {
+        border-color: $dark;
+    }
+
+    &.checked {
+        background-color: $theme;
+    }
+}
+
+.buttonWrapper {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    height: 3rem;
+    width: 3rem;
+}
+
+.button {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 3rem;
+    width: 3rem;
+    font-size: 1.2rem;
+    color: $undo-primary;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.editButton {
+    width: 3rem;
+    margin: 0;
+}
+
+.completeButton {
+    height: 2.6rem;
+    margin: 0;
+    padding-right: 0.58rem;
+    padding-bottom: 0.33rem;
+    font-size: 1.05rem;
+}
+
+.deleteButton:hover {
+    color: $delete-hover;
+}
+.editButton:hover {
+    color: $theme;
+}
+.completeButton:hover {
+    color: $complete-hover;
+}
